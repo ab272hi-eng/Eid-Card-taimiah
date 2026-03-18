@@ -1,1 +1,0 @@
-# Eid-Card-taimiah

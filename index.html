@@ -151,17 +151,17 @@
 <body>
 
     <div class="input-box">
-        <h2>🎈جهز كرت عيدك الآن 😍</h2>
+        <h2>🎈جهز كرت العيد الآن 😍</h2>
         <input type="text" id="nameIn" placeholder="أدخل اسمك هنا..." oninput="updatePreview()">
         
         <div class="setting-label">نوع الخط:</div>
         <select onchange="updateFont(this.value)">
-            <option value="'Cairo', sans-serif">خط القاهرة</option>
-            <option value="'Amiri', serif">خط أميري</option>
-            <option value="'Tajawal', sans-serif">خط تجول</option>
+            <option value="'Cairo', sans-serif">الخط الأول</option>
+            <option value="'Amiri', serif">الخط الثاني</option>
+            <option value="'Tajawal', sans-serif">الخط الثالث</option>
         </select>
 
-        <div class="setting-label">اختر اللون الرسمي:</div>
+        <div class="setting-label">اختر اللون المناسب:</div>
         <div class="color-selector">
             <div class="color-btn btn-white" onclick="applyColor('text-white')"></div>
             <div class="color-btn btn-bronze" onclick="applyColor('text-bronze')"></div>
@@ -175,8 +175,8 @@
         </div>
 
         <button class="main-btn" onclick="generateCard()">عرض الكرت</button>
-        <button id="downloadBtn" class="main-btn" style="display:none;" onclick="downloadImage()">تحميل الصورة ⬇️</button>
-        <button id="shareBtn" class="main-btn" style="display:none;" onclick="shareWhatsApp()">مشاركة 📤</button>
+        <button id="downloadBtn" class="main-btn" style="display:none;" onclick="downloadImage()">⬇️تحميل الصورة بجودة⬇️</button>
+        <button id="shareBtn" class="main-btn" style="display:none;" onclick="shareWhatsApp()">مشاركة العايدة😍🎉 </button>
     </div>
 
     <div id="cardWrapper">
@@ -233,7 +233,7 @@
                             await navigator.share({
                                 files: [file],
                                 title: "كرت عيد",
-                                text: "🎉 كرت العيد الخاص فيني 😍"
+                                text: "🎉 كل عام وانتم بخير وتقبل الله منّا ومنكم صالح الأعمال 😍"
                             });
                         } catch (err) {
                             console.log(err);
